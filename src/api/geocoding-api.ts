@@ -1,10 +1,10 @@
 import axios from "axios";
-import {CurrentWeatherDataType2, DirectGeocodingResponseDataType} from "../types/types";
+import {DirectGeocodingResponseDataType} from "../types/types";
 
 const API_KEY = 'dc241c2be3b27011d5826b6cf784e42e';
 
 const instance = axios.create({
-    baseURL: 'http://api.openweathermap.org/geo/1.0/',
+    baseURL: 'https://api.openweathermap.org/geo/1.0/',
     params: {
         appid: API_KEY,
     }
