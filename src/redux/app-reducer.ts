@@ -111,7 +111,7 @@ export const getWeather = (city: string): ThunkType => async (dispatch, getState
 
                 } else {
 
-                    dispatch(actions.errorOccurred('An error occurred. Try again.'));
+                    dispatch(actions.errorOccurred('An error occurred. Try again. (OneCallAPI phase).'));
 
                     // const directGeocodingData = getState().app.directGeocodingData;
                     // directGeocodingData && dispatch(actions.directGeocodingDataReceived(null));
@@ -134,7 +134,7 @@ export const getWeather = (city: string): ThunkType => async (dispatch, getState
 
     } else {
 
-        dispatch(actions.errorOccurred('An error occurred. Try again.'));
+        dispatch(actions.errorOccurred('An error occurred. Try again. (Geocoding phase).'));
 
         dispatch(actions.buttonStatusChanged(true));
 
