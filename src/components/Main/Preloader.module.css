@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  width: 100%;
+  height: 11vh;
+  background: #f1ecfa;
+  background: radial-gradient(circle, #f1ecfa 0%, #3c9ae9 100%);
+}
+@media (max-width: 992px) {
+  .location {
+    height: 9vh;
+  }
+}
+
+.currentWeather {
+  height: 516px;
+  background: #3f5efb;
+  background: radial-gradient(circle, rgba(63, 94, 251, 0.9304096639) 0%, #46dffc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hourlyForecast {
+  height: calc(78.02vh - 516px);
+  background: #fdbb2d;
+}
+
+/*# sourceMappingURL=Preloader.module.css.map */

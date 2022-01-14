@@ -1,0 +1,73 @@
+.wrapper {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background: #bcdaff;
+  background: radial-gradient(circle, #bcdaff 17%, #e5f2ff 96%);
+}
+
+.logoContainer {
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  padding-left: 1%;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.formContainer {
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 4% 0 0;
+}
+
+.form {
+  display: flex;
+}
+.form input {
+  width: 350px;
+  border: 2px solid silver;
+  padding: 1% 2%;
+  box-sizing: border-box;
+  margin-right: 3%;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  transition: 0.2s;
+}
+@media (max-width: 992px) {
+  .form input {
+    width: 300px;
+    font-size: 18px;
+  }
+}
+.form input:focus {
+  outline: none;
+  box-shadow: 0 0 7px 1px slategray;
+}
+.form button {
+  flex-shrink: 0;
+  font-weight: 500;
+  border: 2px solid silver;
+  border-radius: 10px;
+  background: rgba(214, 214, 214, 0.5);
+  transition: 0.2s;
+}
+.form button:hover {
+  background: rgba(214, 214, 214, 0.8);
+}
+.form button:active {
+  background: #d6d6d6;
+}
+
+/*# sourceMappingURL=Form.module.css.map */

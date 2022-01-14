@@ -1,0 +1,221 @@
+.wrapper {
+  background: #b6ebff;
+  background: linear-gradient(90deg, #b6ebff 17%, #c59aed 96%);
+}
+
+.headerContainer {
+  text-align: center;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+@media (max-width: 992px) {
+  .itemContainer {
+    font-size: 14px;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  border: 1px solid silver;
+  margin-bottom: 2vh;
+  flex-basis: 98%;
+  border-radius: 15px;
+  padding-top: 2vh;
+  background: floralwhite;
+}
+@media (max-width: 1200px) {
+  .item {
+    margin-bottom: 1vh;
+  }
+}
+@media (max-width: 992px) {
+  .item {
+    position: relative;
+    padding-top: 3vh;
+  }
+}
+
+.date {
+  margin: 0 10px;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .date {
+    position: absolute;
+    left: 45px;
+    top: 5px;
+    background: bisque;
+    padding: 0 10px;
+    margin: 0;
+    border-radius: 5px;
+  }
+}
+
+.descriptionContainer {
+  flex-basis: 200px;
+  margin: 0 10px;
+}
+
+.description {
+  text-align: center;
+  font-weight: 600;
+}
+
+.iconContainer {
+  text-align: center;
+}
+
+.icon {
+  width: 85px;
+  height: 85px;
+}
+
+.tempNamesInfo {
+  margin: 0 10px;
+  padding-top: 23px;
+}
+@media (max-width: 992px) {
+  .tempNamesInfo {
+    margin: 0 3px 0 0;
+  }
+}
+
+.tempName {
+  padding-top: 5px;
+}
+@media (max-width: 992px) {
+  .tempName {
+    padding-top: 0;
+    display: none;
+  }
+}
+
+.tempName992 {
+  display: none;
+}
+@media (max-width: 992px) {
+  .tempName992 {
+    padding-top: 3px;
+    display: flex;
+  }
+}
+
+.tempContainer {
+  margin: 0 10px;
+  flex-basis: 70px;
+}
+@media (max-width: 1200px) {
+  .tempContainer {
+    margin: 0 5px;
+    flex-basis: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.timeName {
+  text-align: center;
+}
+
+.temperature {
+  padding-left: 15px;
+  padding-top: 5px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .temperature {
+    font-weight: 600;
+    padding-left: 0;
+  }
+}
+
+.feelsLike {
+  padding-left: 15px;
+  padding-top: 5px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .feelsLike {
+    font-weight: 600;
+    padding-left: 0;
+  }
+}
+
+.propContainer {
+  margin: 0 10px;
+  width: 99px;
+}
+@media (max-width: 1200px) {
+  .propContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+  }
+}
+@media (max-width: 992px) {
+  .propContainer {
+    margin: 0 3px;
+  }
+}
+
+.name {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .windName {
+    overflow: hidden;
+    height: 22.5px;
+  }
+}
+
+.wind {
+  padding-left: 23px;
+  padding-top: 5px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .wind {
+    font-weight: 600;
+    padding: 5px 0 0 0;
+  }
+}
+
+.humidity {
+  padding-left: 30px;
+  padding-top: 5px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .humidity {
+    font-weight: 600;
+    padding: 5px 0 0 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pressurePropContainer {
+    width: 135px;
+  }
+}
+
+.pressure {
+  text-align: center;
+  padding-top: 5px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .pressure {
+    font-weight: 600;
+  }
+}
+
+/*# sourceMappingURL=DailyForecastInfo.module.css.map */

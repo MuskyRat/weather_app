@@ -1,0 +1,45 @@
+.wrapper {
+  background: #f1ecfa;
+  background: radial-gradient(circle, #f1ecfa 0%, #3c9ae9 100%);
+}
+
+.location {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 11vh;
+}
+@media (max-width: 992px) {
+  .location {
+    height: 9vh;
+  }
+}
+
+.header {
+  padding: 0;
+  line-height: 1;
+  color: black;
+  text-decoration: black underline;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flagL {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.flagR {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+/*# sourceMappingURL=LocationInfo.module.css.map */
