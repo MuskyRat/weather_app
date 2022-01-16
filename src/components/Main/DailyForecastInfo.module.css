@@ -7,15 +7,39 @@
   text-align: center;
 }
 
+.itemsContainer {
+  overflow-x: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+@media (max-width: 768px) {
+  .list {
+    width: 2500px;
+    margin-bottom: 5px;
+  }
+}
+
 .itemContainer {
   display: flex;
   justify-content: center;
   font-weight: 500;
   font-size: 15px;
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 992px) {
   .itemContainer {
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .itemContainer {
+    display: inline-block;
   }
 }
 
@@ -40,6 +64,14 @@
     padding-top: 3vh;
   }
 }
+@media (max-width: 768px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3px;
+    padding: 3px;
+  }
+}
 
 .date {
   margin: 0 10px;
@@ -48,7 +80,7 @@
 @media (max-width: 992px) {
   .date {
     position: absolute;
-    left: 45px;
+    left: 40px;
     top: 5px;
     background: bisque;
     padding: 0 10px;
@@ -56,15 +88,41 @@
     border-radius: 5px;
   }
 }
+@media (max-width: 786px) {
+  .date {
+    position: relative;
+    left: 15px;
+    width: fit-content;
+  }
+}
 
 .descriptionContainer {
   flex-basis: 200px;
   margin: 0 10px;
 }
+@media (max-width: 992px) {
+  .descriptionContainer {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .descriptionContainer {
+    flex-basis: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
 
 .description {
   text-align: center;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  .description {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .iconContainer {
@@ -75,10 +133,31 @@
   width: 85px;
   height: 85px;
 }
+@media (max-width: 768px) {
+  .icon {
+    width: 57px;
+    height: 57px;
+  }
+}
+
+.temperaturesBlock {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .temperaturesBlock {
+    padding: 5px 0;
+    border-top: 1px solid silver;
+  }
+}
 
 .tempNamesInfo {
   margin: 0 10px;
   padding-top: 23px;
+}
+@media (max-width: 1200px) {
+  .tempNamesInfo {
+    margin: 0 5px 0 0;
+  }
 }
 @media (max-width: 992px) {
   .tempNamesInfo {
@@ -107,16 +186,24 @@
 }
 
 .tempContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  align-items: center;
   margin: 0 10px;
-  flex-basis: 70px;
 }
 @media (max-width: 1200px) {
   .tempContainer {
     margin: 0 5px;
-    flex-basis: 62px;
+    width: 63px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .tempContainer {
+    margin: 0;
   }
 }
 
@@ -125,26 +212,33 @@
 }
 
 .temperature {
-  padding-left: 15px;
   padding-top: 5px;
   font-weight: 700;
 }
 @media (max-width: 1200px) {
   .temperature {
     font-weight: 600;
-    padding-left: 0;
   }
 }
 
 .feelsLike {
-  padding-left: 15px;
   padding-top: 5px;
   font-weight: 700;
 }
 @media (max-width: 1200px) {
   .feelsLike {
     font-weight: 600;
-    padding-left: 0;
+  }
+}
+
+.propsBlock {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .propsBlock {
+    border-top: 1px solid silver;
+    padding: 5px 0;
+    justify-content: center;
   }
 }
 
@@ -157,12 +251,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 5px;
+    width: 80px;
+    margin: 0 3px;
   }
 }
 @media (max-width: 992px) {
   .propContainer {
-    margin: 0 3px;
+    margin: 0;
   }
 }
 
@@ -203,7 +298,7 @@
 
 @media (max-width: 1200px) {
   .pressurePropContainer {
-    width: 135px;
+    width: 105px;
   }
 }
 
