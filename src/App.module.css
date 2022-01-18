@@ -1,10 +1,20 @@
 .wrapper {
   width: 100vw;
   height: 100vh;
-  padding: 1.5vh 0 1.5vh 0;
+  padding: 13px 0;
   background: #0068c1;
   background: linear-gradient(90deg, #0068c1 0%, rgba(98, 192, 249, 0.9976365546) 50%, white 100%);
   box-sizing: border-box;
+}
+@media (orientation: portrait) and (max-width: 480px) {
+  .wrapper {
+    padding: 5px 0;
+  }
+}
+@media (max-height: 700px) and (orientation: landscape) {
+  .wrapper {
+    padding: 7px 0;
+  }
 }
 
 .container {
@@ -31,8 +41,8 @@
 .mainContainer {
   box-sizing: border-box;
   width: 100%;
-  height: 89vh;
-  margin-top: 2vh;
+  height: calc(100vh - 13px - 13px - 53px - 17px);
+  margin-top: 17px;
   background: mintcream;
   border-radius: 10px;
   padding: 0 0;
@@ -61,8 +71,20 @@
 }
 @media (max-width: 992px) {
   .mainContainer {
-    margin-top: 1.5vh;
-    height: 89.5vh;
+    margin-top: 13px;
+    height: calc(100vh - 13px - 13px - 53px - 13px);
+  }
+}
+@media (orientation: portrait) and (max-width: 480px) {
+  .mainContainer {
+    margin-top: 11px;
+    height: calc(100vh - 5px - 5px - 45px - 11px);
+  }
+}
+@media (max-height: 700px) and (orientation: landscape) {
+  .mainContainer {
+    margin-top: 10px;
+    height: calc(100vh - 7px - 7px - 53px - 10px);
   }
 }
 

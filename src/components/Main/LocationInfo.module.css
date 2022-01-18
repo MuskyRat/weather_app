@@ -7,11 +7,29 @@
   text-align: center;
   position: relative;
   width: 100%;
-  height: 11vh;
+  height: 97px;
+}
+@media (max-width: 1200px) {
+  .location {
+    height: 85px;
+  }
 }
 @media (max-width: 992px) {
   .location {
-    height: 9vh;
+    height: 79px;
+  }
+}
+@media (max-width: 768px) {
+  .location {
+    height: calc(60px + 20 * (100vw - 320px) / 448);
+    min-height: 68px;
+  }
+}
+@media (max-width: 486px) {
+  .location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -20,11 +38,24 @@
   line-height: 1;
   color: black;
   text-decoration: black underline;
+}
+
+.headerContainer {
   position: absolute;
   z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 486px) {
+  .headerContainer {
+    position: static;
+    top: unset;
+    left: unset;
+    transform: translate(0, 0);
+    justify-self: flex-end;
+    flex-grow: 1;
+  }
 }
 
 .flagL {
@@ -32,7 +63,11 @@
   top: 0;
   left: 0;
   height: 100%;
-  z-index: 1;
+}
+@media (max-width: 486px) {
+  .flagL {
+    position: relative;
+  }
 }
 
 .flagR {
@@ -40,6 +75,11 @@
   top: 0;
   right: 0;
   height: 100%;
+}
+@media (max-width: 486px) {
+  .flagR {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=LocationInfo.module.css.map */

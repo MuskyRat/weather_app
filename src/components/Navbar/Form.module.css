@@ -1,5 +1,5 @@
 .wrapper {
-  height: 6vh;
+  height: 53px;
   width: 100%;
   display: flex;
   border-radius: 15px;
@@ -7,12 +7,22 @@
   background: #bcdaff;
   background: radial-gradient(circle, #bcdaff 17%, #e5f2ff 96%);
 }
+@media (orientation: portrait) and (max-width: 480px) {
+  .wrapper {
+    height: 45px;
+  }
+}
 
 .logoContainer {
   box-sizing: border-box;
   width: 30%;
   height: 100%;
   padding-left: 1%;
+}
+@media (max-width: 720px) {
+  .logoContainer {
+    display: none;
+  }
 }
 
 .logo {
@@ -30,9 +40,16 @@
   align-items: center;
   padding: 0 4% 0 0;
 }
+@media (max-width: 720px) {
+  .formContainer {
+    width: 100%;
+  }
+}
 
 .form {
   display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 .form input {
   width: 350px;
@@ -51,6 +68,12 @@
     font-size: 18px;
   }
 }
+@media (max-width: 500px) {
+  .form input {
+    width: 52%;
+    font-size: calc(15px + 3 * (100vw - 320px) / 180);
+  }
+}
 .form input:focus {
   outline: none;
   box-shadow: 0 0 7px 1px slategray;
@@ -62,6 +85,12 @@
   border-radius: 10px;
   background: rgba(214, 214, 214, 0.5);
   transition: 0.2s;
+}
+@media (max-width: 500px) {
+  .form button {
+    width: 40%;
+    font-size: calc(12px + 4 * (100vw - 320px) / 180);
+  }
 }
 .form button:hover {
   background: rgba(214, 214, 214, 0.8);

@@ -22,7 +22,7 @@ const LocationInfo: React.FC = React.memo( () => {
             {directGeocodingData && oneCallData && <div className={style.container}>
                 <div className={style.location}>
                     <img className={style.flagL} src={flagSrc} alt="flg"/>
-                    <h1 className={style.header}>{`${cityName}, ${countryName}`}</h1>
+                        <div className={style.headerContainer}><h1 className={style.header}>{`${cityName}, ${countryName}`}</h1></div>
                     <img className={style.flagR} src={flagSrc} alt="flg"/>
                 </div>
                 {/*<div className={style.item}><h1 className={style.b}>Country: {`${countryName}`}</h1></div>*/}

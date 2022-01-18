@@ -19,7 +19,7 @@
 }
 @media (max-width: 768px) {
   .list {
-    width: 2500px;
+    width: 2188px;
     margin-bottom: 5px;
   }
 }
@@ -51,7 +51,8 @@
   flex-basis: 98%;
   border-radius: 15px;
   padding-top: 2vh;
-  background: floralwhite;
+  background: #bcdaff;
+  background: radial-gradient(circle, #bcdaff 17%, #e5f2ff 96%);
 }
 @media (max-width: 1200px) {
   .item {
@@ -72,6 +73,11 @@
     padding: 3px;
   }
 }
+@media (orientation: landscape) and (max-width: 992px) and (min-width: 769px) {
+  .item {
+    padding-top: max(2vh, 27px);
+  }
+}
 
 .date {
   margin: 0 10px;
@@ -88,7 +94,7 @@
     border-radius: 5px;
   }
 }
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .date {
     position: relative;
     left: 15px;
@@ -146,7 +152,7 @@
 @media (max-width: 768px) {
   .temperaturesBlock {
     padding: 5px 0;
-    border-top: 1px solid silver;
+    border-top: 1px solid white;
   }
 }
 
@@ -236,7 +242,7 @@
 }
 @media (max-width: 768px) {
   .propsBlock {
-    border-top: 1px solid silver;
+    border-top: 1px solid white;
     padding: 5px 0;
     justify-content: center;
   }
