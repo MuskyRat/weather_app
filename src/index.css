@@ -27,7 +27,7 @@ h1 {
 @media (max-width: 768px) {
     h1 {
         font-size: calc( 21px + 4 * ((100vw - 320px) / (768 - 320)) );
-        padding: calc( 21px + 4 * ((100vw - 320px) / (768 - 320)) ) 0;
+        padding: calc( 18px + 7 * ((100vw - 320px) / (768 - 320)) ) ;
     }
 }
 

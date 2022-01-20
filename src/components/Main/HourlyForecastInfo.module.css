@@ -52,6 +52,11 @@
     margin: 1vh 1px;
   }
 }
+@media (max-width: 768px) {
+  .item {
+    margin-top: 0;
+  }
+}
 
 .date {
   font-size: 13px;

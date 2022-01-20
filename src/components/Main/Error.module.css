@@ -17,6 +17,11 @@
   text-align: center;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .error {
+    font-size: calc(18px + 7 * (100vw - 320px) / 448);
+  }
+}
 
 .text {
   font-size: 25px;

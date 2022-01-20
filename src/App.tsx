@@ -48,6 +48,7 @@ const App: React.FC = React.memo(() => {
                     {geocodingData && oneCallData && !loadingStatus && !error && <CurrentWeatherInfo/>}
                     {geocodingData && oneCallData && !loadingStatus && !error && <HourlyForecastInfo/>}
                     {geocodingData && oneCallData && !loadingStatus && !error && <DailyForecastInfo/>}
+                    {/*<Preloader />*/}
                 </div>
             </div>
         </div>
